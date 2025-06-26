@@ -10,11 +10,11 @@
   "categories": [
     "Other",
     "AI",
-    "Debugging"
+    "Debuggers"
   ],
   "activationEvents": [
-    "onCommand:fixbuggy.run",
-    "onView:fixbuggy.panel"
+    
+    
   ],
   "main": "./dist/extension.js",
   "contributes": {
@@ -37,7 +37,8 @@
       "fixbuggySidebar": [
         {
           "id": "fixbuggy.panel",
-          "name": "AI Fix Suggestions"
+          "name": "AI Fix Suggestions",
+          "icon": "media/icon.svg"
         }
       ]
     }
