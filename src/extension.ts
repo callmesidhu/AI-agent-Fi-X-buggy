@@ -11,7 +11,7 @@ export function activate(context: vscode.ExtensionContext) {
 
   context.subscriptions.push(
     vscode.commands.registerCommand("fixbuggy.run", async () => {
-      vscode.window.showInformationMessage("\ud83e\udde0 Agent fiXbuggy is running...");
+      vscode.window.showInformationMessage("🤖 Agent Fi-X-buggy is running...");
       const fakeError = "TypeError: Cannot read properties of undefined (reading 'foo')";
       const explanation = await explainError(fakeError);
       panel.updateContent(explanation);
