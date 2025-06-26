@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      font-family: sans-serif;
+      color: white;
+      background: #1e1e1e;
+      padding: 12px;
+    }
+    pre {
+      background: #2e2e2e;
+      padding: 10px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <h2>🧠 Agent fiXbuggy Suggests:</h2>
+  <pre id="explanation">Waiting for error explanation...</pre>
+  <script>
+    window.addEventListener('message', event => {
+      document.getElementById('explanation').textContent = event.data.explanation;
+    });
+  </script>
+</body>
+</html>
